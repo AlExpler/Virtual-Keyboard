@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+
+body {
+    background-color: #181823;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.keyboard__inner {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px 195px;
+    gap: 20px;
+
+    font-family: 'K2D', sans-serif;
+}
+.keyboard__text {
+    height: 150px;
+
+    background-color: #181823;
+}
+.keyboard__lang {
+    color: #DDE6ED;
+    font-size: 24px;
+    user-select: none;
+}
+.keyboard__keys {
+    display: grid;
+    grid-template-columns: repeat(15, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.keyboard__key--inactive {
+    background-color: #9DB2BF;
+
+    transition: 0.1s;
+}
+.keyboard__key--active {
+    background-color: #DDE6ED;
+
+    transition: 0.1s;
+}
+.keyboard__key {
+    border: 0px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #181823;
+    font-size: 24px;
+    user-select: none;
+
+    transition: 0.1s;
+}
+.keyboard__key--special--inactive {
+    background-color: #526D82;
+    color: #DDE6ED;
+}
+.keyboard__key--special { 
+    font-size: 20px;
+
+    transition: 0.1s;
+}
+.keyboard__theme-button {
+    background-color: #181823;
+
+    color: #DDE6ED;
+}
+#Backspace { grid-area: 1 / 14 / 2 / 16; }
+#CapsLock { grid-area: 3 / 1 / 4 / 3; }
+#Enter { grid-area: 3 / 14 / 4 / 16; }
+#ShiftLeft { grid-area: 4 / 1 / 5 / 3; }
+#ShiftRight { grid-area: 4 / 13 / 5 / 15; }
+#Space { grid-area: 5 / 4 / 6 / 10; }
+#ControlRight { grid-area: 5 / 11 / 6 / 13; }
+    
