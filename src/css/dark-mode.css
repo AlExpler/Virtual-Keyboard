@@ -19,6 +19,7 @@ body {
 }
 .keyboard__text {
     height: 150px;
+    color: #FFFFFF;
 
     background-color: #181823;
 }
